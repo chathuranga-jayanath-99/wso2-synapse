@@ -20,7 +20,7 @@
     <parent>
         <groupId>org.apache.synapse</groupId>
         <artifactId>Apache-Synapse</artifactId>
-        <version>4.0.0-wso2v215.1-SNAPSHOT</version>
+        <version>4.0.0-wso2v215.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <artifactId>synapse-patches</artifactId>
@@ -53,7 +53,7 @@
                             <tasks>
                                 <unjar dest="${project.build.outputDirectory}">
                                     <fileset dir="${basedir}/jars">
-                                        <include name="**/*.jar"/>
+                                        <include name="**/*.jar" />
                                     </fileset>
                                 </unjar>
                             </tasks>

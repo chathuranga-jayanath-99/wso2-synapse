@@ -20,7 +20,7 @@
     <parent>
         <groupId>org.apache.synapse</groupId>
         <artifactId>Apache-Synapse</artifactId>
-        <version>4.0.0-wso2v215.1-SNAPSHOT</version>
+        <version>4.0.0-wso2v215.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
@@ -283,5 +283,5 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-    <properties/>
+    <properties />
 </project>
