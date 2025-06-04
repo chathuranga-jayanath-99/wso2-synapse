@@ -96,8 +96,11 @@ public class ClientConnFactory {
             // See if there's a custom SSL profile configured for this server
             customContext = sslByHostMap.get(new RequestDescriptor(host, requestID));
             if (customContext == null) {
-                customContext = sslByHostMap.get(new RequestDescriptor(ALL_HOSTS, ""));
+                customContext = sslByHostMap.get(new RequestDescriptor(host, ""));
             }
+            if (customContext == null) {
+                customContext = sslByHostMap.get(new RequestDescriptor(ALL_HOSTS, ""));
+            }  
         }
         if (customContext != null) {
             return customContext;
